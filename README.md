@@ -71,10 +71,8 @@ Works on OSX, Ubuntu, and Windows subsystem for Linux.
 
     ```bash
     # Navigate into the repository directory
-    # If using python2x
+    cd TensorMol
     pip install -e .
-    # If python3x
-    pip3 install -e .
     ```
 
 1. Test the installation:
