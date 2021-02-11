@@ -70,7 +70,6 @@ Works on OSX, Ubuntu, and Windows subsystem for Linux.
 1. Install the package with pip:
 
     ```bash
-    # Navigate into the repository directory
     cd TensorMol
     pip install -e .
     ```
