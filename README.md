@@ -64,7 +64,7 @@ Works on OSX, Ubuntu, and Windows subsystem for Linux.
 
     ```bash
     virtualenv tensormol-venv
-    source venv/bin/activate
+    source tensormol-venv/bin/activate
     ```
 
 1. Install the package with pip:
