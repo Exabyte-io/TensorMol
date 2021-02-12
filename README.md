@@ -32,8 +32,8 @@
  - Path integral simulations via interface with [I-PI](https://github.com/i-pi/i-pi) MD engine.
 
 ## News: 
- - Did we disappear? NO! but TensorMol0.2 is being developed in a private developers branch. It'll be back here soon. 
- - (update 3/29/2018) TensorMol0.2 will arrive before 5/1. It adds additn'l element support, geometrical constraints, conformational search and other features.
+ This fork of TensorMol is being maintained by [Team Exabyte](exabyte.io). Check back 
+ periodically for new features and other improvements!
 
 ## License: GPLv3
 By using this software you agree to the terms in COPYING
