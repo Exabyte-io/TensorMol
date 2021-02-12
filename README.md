@@ -92,7 +92,9 @@ Works on OSX, Ubuntu, and Windows subsystem for Linux.
     or, if SSH connectivity with GitHub is not set up, use HTTPS:
 
     ```bash
+
     git clone https://github.com/Exabyte-io/TensorMol.git    
+
     ```
 
 4. Complete the Installation
@@ -107,12 +109,14 @@ Works on OSX, Ubuntu, and Windows subsystem for Linux.
 
     ```bash
     cd TensorMol
+
    ```
    
     Pip install TensorMol:
     ```bash
     pip install -e .
    ```
+
 
 
 5. Test the installation:
