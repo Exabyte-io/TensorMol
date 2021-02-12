@@ -42,7 +42,48 @@ By using this software you agree to the terms in COPYING
 
 Works on OSX, Ubuntu, and Windows subsystem for Linux.
 
-1. Clone repository:
+1. Install [PyEnv](https://github.com/pyenv/pyenv#installation)
+
+2. If you are installing on **Python 2** (not recommended, as Python 2 is no longer maintained),
+   ensure you have a version of 2.7 available via PyEnv by:
+
+    ```bash
+    pyenv install 2.7.18
+    ```
+
+    Likewise, if you plan to install on **Python 3**  (recommended):
+
+    ```bash
+   pyenv install 3.6.12
+    ```
+
+    You can verify the installation occurred `pyenv versions` to print a list of available Python versions.
+
+2. Create a fresh virtual environment for your chosen Python version. If you are running **Python 2**:
+
+    ```bash
+   pyenv virtualenv 2.7.18 .tensormol_env
+    ```
+   
+    Likewise, for **Python 3**:
+
+    ```bash
+    pyenv virtualenv 3.6.12 .tensormol_env
+    ```
+   
+    You can call these environments whatever you like, we just choose `.tensormol_env` as the name for the
+    purposes of this tutorial
+   
+2. Activate your PyEnv environment:
+
+    ```bash
+   pyenv activate .tensormol_env
+    ```
+
+   TensorMol will be installed only to this environment, so whenever you want to run TensorMol,
+   you should run this command. To exit the environment, you can always  run `pyenv deactivate`.
+   
+3. Clone repository:
     
     ```bash
     git clone git@github.com:Exabyte-io/TensorMol.git    
@@ -54,30 +95,27 @@ Works on OSX, Ubuntu, and Windows subsystem for Linux.
     git clone https://github.com/Exabyte-io/TensorMol.git    
     ```
 
-1. Install [virtualenv](https://virtualenv.pypa.io/en/stable/) using [pip](https://pip.pypa.io/en/stable/) if not already present:
+4. Complete the Installation
+
+    Older versions of `pip` (the canonical Python package manager) will have trouble installing the `grpcio`
+    package, which is a dependency of TensorMol. Make sure your version of `pip` is up to date:
 
     ```bash
-    pip install virtualenv
-    ```
-
-1. Create virtual environment:
-
-    ```bash
-    virtualenv tensormol-venv
-    source venv/bin/activate
-    ```
-
-1. Install the package with pip:
+   pip install --upgrade pip 
+   ```
+    Enter the TensorMol directory:
 
     ```bash
-    # Navigate into the repository directory
-    # If using python2x
+    cd TensorMol
+   ```
+   
+    Pip install TensorMol:
+    ```bash
     pip install -e .
-    # If python3x
-    pip3 install -e .
-    ```
+   ```
 
-1. Test the installation:
+
+5. Test the installation:
 
     ```bash
     cd samples
