@@ -32,8 +32,7 @@
  - Path integral simulations via interface with [I-PI](https://github.com/i-pi/i-pi) MD engine.
 
 ## News: 
- This fork of TensorMol is being maintained by [Team Exabyte](exabyte.io). Check back 
- periodically for new features and other improvements!
+ This fork of TensorMol is being maintained by [Team Exabyte](exabyte.io).
 
 ## License: GPLv3
 By using this software you agree to the terms in COPYING
